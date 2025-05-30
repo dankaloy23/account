@@ -1,27 +1,65 @@
 <html>
 <head>
   <title>Registration</title>
+  <style>
+    .main 
+    {
+      padding: 20px;
+      width: 400px;
+      margin: 40px auto 0;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border: 1px solid silver;
+    }
+
+    .form-control
+    {
+      border: 1px solid #666;
+      border-radius: 4px;
+      padding: 0 8px;
+      height: 32px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-container
+    {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
   <form method="post">
-    <label for="fname">First Name</label>
-    <input type="text" name="fname" id="fname" required>
+    <div class="main">
+      <div class="form-container">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" class="form-control" required>
+      </div>
 
-    <label for="mname">Middle Name</label>
-    <input type="text" name="mname" id="mname" required>
+      <div class="form-container">
+        <label for="mname">Middle Name:</label>
+        <input type="text" name="mname" id="mname" class="form-control" required>
+      </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" name="lname" id="lname" required>
+      <div class="form-container">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" class="form-control" required>
+      </div>
 
-    <label for="gender">Gender</label>
-    <select name="gender" id="gender">
-      <option value=""></option>
-      <option value="M">Male</option>
-      <option value="F">Female</option>
-    </select>
+      <div class="form-container">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" class="form-control">
+          <option value=""></option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </div>
 
-    <input type="submit" name="submit_button" id="submit_button">
+      <div class="form-container">
+        <input type="submit" name="submit_button" id="submit_button" class="form-control">
+      </div>
+    </div>
   </form>
 </body>
 </html>
